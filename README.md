@@ -1,5 +1,29 @@
+<!-- Artwork is stored in this repository. No third-party stats services required. -->
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/mazhujie/mazhujie/main/assets/profile-mobile.jpg">
+  <img src="./assets/profile-desktop.jpg" width="100%" alt="mazhujie — Embedded Linux &amp; Rockchip。探索嵌入式 Linux 与 Rockchip 平台，关注 Linux 驱动、相机链路与调试。技术方向：Rockchip BSP、V4L2、MIPI CSI、RAW12；学习笔记：C / C++、Neovim。">
+</picture>
+
 <p align="center">
-  <a href="mailto:zhujiema@foxmail.com"><img src="./profile.svg" width="100%" alt="mazhujie — 嵌入式 Linux 学习与调试笔记。Rockchip BSP、V4L2 / MIPI、Linux 驱动。Email: zhujiema@foxmail.com" /></a>
+  <a href="mailto:zhujiema@foxmail.com">
+    <picture>
+      <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/mazhujie/mazhujie/main/assets/email-mobile.svg">
+      <img src="./assets/email.svg" width="100%" alt="Say hello — zhujiema@foxmail.com">
+    </picture>
+  </a>
 </p>
 
-<p align="center"><a href="mailto:zhujiema@foxmail.com">✉ Email · zhujiema@foxmail.com</a></p>
+<details>
+<summary>关于我 · 文字版</summary>
+
+**从一行日志，探索系统的更多可能。**
+
+在嵌入式 Linux 的世界里持续学习与探索，记录调试过程，让每一次经验都有迹可循。
+
+- **Rockchip BSP**：板级适配与 Linux 驱动。
+- **相机链路**：V4L2、MIPI CSI、RAW12。
+- **学习笔记**：调试、C / C++、Neovim。
+
+联系邮箱：[zhujiema@foxmail.com](mailto:zhujiema@foxmail.com)
+
+</details>
