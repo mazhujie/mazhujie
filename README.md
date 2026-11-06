@@ -13,17 +13,3 @@
   </a>
 </p>
 
-<details>
-<summary>关于我 · 文字版</summary>
-
-**从一行日志，探索系统的更多可能。**
-
-在嵌入式 Linux 的世界里持续学习与探索，记录调试过程，让每一次经验都有迹可循。
-
-- **Rockchip BSP**：板级适配与 Linux 驱动。
-- **相机链路**：V4L2、MIPI CSI。
-- **学习笔记**：调试、C / C++。
-
-联系邮箱：[zhujiema@foxmail.com](mailto:zhujiema@foxmail.com)
-
-</details>
