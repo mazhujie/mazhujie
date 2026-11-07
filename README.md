@@ -4,6 +4,11 @@
   <img src="./assets/profile-desktop-v2.jpg" width="100%" alt="mazhujie — Embedded Linux &amp; Rockchip。探索嵌入式 Linux 与 Rockchip 平台，关注 Linux 驱动、相机链路与调试。技术方向：Rockchip BSP、V4L2、MIPI CSI；学习笔记：C / C++。">
 </picture>
 
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/mazhujie/mazhujie/main/assets/contributions-mobile.svg">
+  <img src="./assets/contributions.svg" width="100%" alt="手绘 GitHub 贡献热力图，使用真实公开贡献日历，每天自动更新。">
+</picture>
+
 <p align="center">
   <a href="mailto:zhujiema@foxmail.com">
     <picture>
@@ -12,4 +17,3 @@
     </picture>
   </a>
 </p>
-

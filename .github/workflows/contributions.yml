@@ -1,0 +1,43 @@
+name: Update hand-drawn contributions
+
+on:
+  schedule:
+    - cron: '23 22 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/contributions.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hand-drawn-contributions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Validate the calendar renderer
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Read public GitHub contributions and render the cards
+        env:
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/render_contributions.py --login "$PROFILE_LOGIN"
+      - name: Save updated cards
+        run: |
+          git add assets/contributions.svg assets/contributions-mobile.svg assets/contributions.json
+          if git diff --cached --quiet; then
+            echo 'Contribution cards are already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh hand-drawn contribution calendar'
+          git pull --rebase origin main
+          git push origin HEAD:main
